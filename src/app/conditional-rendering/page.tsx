@@ -1,7 +1,3 @@
-/**
- * 条件分岐が多い場合はデータの持ち方を工夫しましょう。
- * @returns
- */
 function Component1() {
   return <>コンポーネント1</>;
 }
@@ -18,6 +14,10 @@ type Props = {
   condition: string;
 };
 
+/**
+ * 条件分岐が多い場合はデータの持ち方を工夫しましょう。
+ * @returns
+ */
 export default function Page({ condition }: Props) {
   switch (condition) {
     case 'Admin':

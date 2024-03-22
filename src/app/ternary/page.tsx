@@ -1,7 +1,3 @@
-/**
- * 条件分岐は可読性を意識しましょう。
- * @returns
- */
 function Component1() {
   return <>コンポーネント1</>;
 }
@@ -14,6 +10,10 @@ type Props = {
   condition: boolean;
 };
 
+/**
+ * 条件分岐は可読性を意識しましょう。
+ * @returns
+ */
 export default function Page({ condition }: Props) {
   if (condition) {
     return <Component1 />;
