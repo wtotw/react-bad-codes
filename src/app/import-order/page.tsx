@@ -1,10 +1,10 @@
 /**
- * importは可読性を意識しましょう。
+ * importも可読性を意識しましょう。
  */
-// import React from 'react';
-// import { format } from 'date-fns';
 // import { commonFunction } from '../../lib/functions';
+// import React from 'react';
 // import { Component } from './Component';
+// import { format } from 'date-fns';
 
 export default function Page() {
   return <>ほげ</>;
