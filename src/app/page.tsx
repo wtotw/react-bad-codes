@@ -33,6 +33,12 @@ export default function Home() {
       <li>
         <Link href="/import-order">importの順番</Link>
       </li>
+      <li>
+        <Link href="/implicit-return">暗黙のreturn</Link>
+      </li>
+      <li>
+        <Link href="/naming-component">コンポーネントの命名</Link>
+      </li>
     </ol>
   );
 }
