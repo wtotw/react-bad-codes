@@ -1,6 +1,5 @@
 /**
  * コンポーネントの命名規則を守りましょう。
- * @returns
  */
 function hoge() {
   return <>hoge</>;
