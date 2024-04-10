@@ -42,6 +42,9 @@ export default function Home() {
       <li>
         <Link href="/naming-props">Propsの命名</Link>
       </li>
+      <li>
+        <Link href="/self-closing">セルフクロージングタグ</Link>
+      </li>
     </ol>
   );
 }
