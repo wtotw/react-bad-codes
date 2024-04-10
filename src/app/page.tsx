@@ -39,6 +39,9 @@ export default function Home() {
       <li>
         <Link href="/naming-component">コンポーネントの命名</Link>
       </li>
+      <li>
+        <Link href="/naming-props">Propsの命名</Link>
+      </li>
     </ol>
   );
 }
