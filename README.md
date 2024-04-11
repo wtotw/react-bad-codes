@@ -1,4 +1,4 @@
-# React Bad Code
+# React Bad Codes
 
 React の悪いコードが書いてあるリポジトリです。
 
