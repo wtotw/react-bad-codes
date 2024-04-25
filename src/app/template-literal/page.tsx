@@ -1,5 +1,5 @@
 function Component({ name }: { name: string }) {
-  const message = 'Hello ' + name + '!!';
+  const message = `Hello ${name}!!`;
   return <>{message}</>;
 }
 
