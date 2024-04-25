@@ -1,14 +1,14 @@
 /**
  * コンポーネントの命名規則を守りましょう。
  */
-function hoge() {
+function Hoge() {
   return <>hoge</>;
 }
 
 export default function Page() {
   return (
     <>
-      <hoge />
+      <Hoge />
     </>
   );
 }
