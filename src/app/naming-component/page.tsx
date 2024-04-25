@@ -6,9 +6,5 @@ function Hoge() {
 }
 
 export default function Page() {
-  return (
-    <>
-      <Hoge />
-    </>
-  );
+  return <Hoge />;
 }

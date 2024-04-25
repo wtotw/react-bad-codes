@@ -16,9 +16,5 @@ function Component({ userName, phoneNumber }: Props) {
 }
 
 export default function Page() {
-  return (
-    <>
-      <Component userName="John" phoneNumber={1234567890} />
-    </>
-  );
+  return <Component userName="John" phoneNumber={1234567890} />;
 }

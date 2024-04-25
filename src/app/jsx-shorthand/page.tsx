@@ -3,9 +3,5 @@
  * @returns
  */
 export default function Page() {
-  return (
-    <>
-      <input type="text" value={'テスト文字列'} disabled />
-    </>
-  );
+  return <input type="text" value={'テスト文字列'} disabled />;
 }
