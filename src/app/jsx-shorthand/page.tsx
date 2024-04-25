@@ -5,7 +5,7 @@
 export default function Page() {
   return (
     <>
-      <input type="text" value={'テスト文字列'} disabled={true} />
+      <input type="text" value={'テスト文字列'} disabled />
     </>
   );
 }
