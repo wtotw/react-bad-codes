@@ -8,7 +8,7 @@ function Component() {
 export default function Page() {
   return (
     <>
-      <Component></Component>
+      <Component/>
     </>
   );
 }
