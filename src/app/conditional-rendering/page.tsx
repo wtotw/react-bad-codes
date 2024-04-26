@@ -11,7 +11,7 @@ function Component3() {
 }
 
 type Props = {
-  condition: string;
+  condition: 'Admin' | 'User' | 'Guest';
 };
 
 /**
