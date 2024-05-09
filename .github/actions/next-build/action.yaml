@@ -1,0 +1,10 @@
+name: Next build
+description: npm run buildの実行
+
+runs:
+  using: 'composite'
+
+  steps:
+    - name: Run build
+      shell: bash
+      run: npm run build

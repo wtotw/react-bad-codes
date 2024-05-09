@@ -8,26 +8,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
       - name: Set up Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20
-
-      - name: Get npm Cache Directory
-        uses: actions/cache@v4
-        id: node_modules_cache_id
-        with:
-          path: '**/node_modules'
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-
-      - name: Install dependencies
-        run: npm ci
+        uses: ./.github/actions/set-up-node
 
       - name: Run lint
-        uses: ./.github/actions/lint
+        uses: ./.github/actions/next-lint
 
       - name: Build
-        run: npm run build
+        uses: ./.github/actions/next-build
