@@ -1,6 +1,12 @@
 name: Set Up Node.js
 description: Node.jsのセットアップ
 
+inputs:
+  working-directory:
+    description: 'working-directory of package-lock.json'
+    required: false
+    default: 'application'
+
 runs:
   using: 'composite'
 
