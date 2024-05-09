@@ -1,7 +1,8 @@
-name: Push CI
+name: Check and Build
 
 on:
   push:
+  pull_request:
 
 jobs:
   check-and-build:
