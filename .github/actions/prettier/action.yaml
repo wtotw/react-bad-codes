@@ -1,0 +1,24 @@
+name: Format with Prettier
+description: npm run formatの実行
+
+runs:
+  using: 'composite'
+
+  steps:
+    - name: Run format
+      shell: bash
+      run: npm run format
+
+    - name: Commit and push
+      uses: stefanzweifel/git-auto-commit-action@v4.16.0
+      id: auto-commit-action
+      with:
+        commit_message: Format by Github Actions
+
+    - name: Run if changes have been detected
+      if: steps.auto-commit-action.outputs.changes_detected == 'true'
+      run: echo "Changes!"
+
+    - name: Run if no changes have been detected
+      if: steps.auto-commit-action.outputs.changes_detected == 'false'
+      run: echo "No Changes!"
