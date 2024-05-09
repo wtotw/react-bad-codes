@@ -27,7 +27,7 @@ jobs:
         run: npm ci
 
       - name: Run lint
-        run: npm run lint
+        uses: ./.github/actions/lint
 
       - name: Build
         run: npm run build
